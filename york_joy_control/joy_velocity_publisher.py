@@ -13,8 +13,8 @@ class JoyVelocityPublisher(Node):
         qos_profile = QoSProfile(depth=10)
 
         # define parámetros
-        self._linear_scale = 0.2
-        self._angular_scale = 0.2
+        self._linear_scale = 0.4
+        self._angular_scale = 0.4
 
         # inicia suscriptores
         self.joy_status = self.create_subscription(Joy, '/joy', self.joy_callback, QoSReliabilityPolicy.RELIABLE)
@@ -52,7 +52,7 @@ class JoyVelocityPublisher(Node):
         DIR_Y = msg.axes[7]
 
         if A_button:
-            self.get_logger().info(f"Left axes x: {LSTICK_x_axis}, y: {LSTICK_y_axis}")
+            self.get_logger().info(f"Joystick left axes x: {LSTICK_x_axis}, y: {LSTICK_y_axis}")
             # prepara y publica un mensaje para la velocidad
             cmd_vel = Twist()
             cmd_vel.linear.x = LSTICK_y_axis * self._linear_scale

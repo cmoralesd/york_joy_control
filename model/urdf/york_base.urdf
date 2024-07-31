@@ -2,7 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! 
      Edited by @cmoralesd, july 2024
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot  name="york_urdf">
+<robot  name="york_joy_control_urdf">
 
   <!-- BASE LINK -->
   <link name="base_link">
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/base_link.STL" />
+          filename="package://york_joy_control/model/meshes/base_link.STL" />
       </geometry>
       <material
         name="dark gray">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/base_link.STL" />
+          filename="package://york_joy_control/model/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -68,7 +68,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/frw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/frw_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -82,7 +82,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/frw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/frw_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -123,7 +123,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/flw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/flw_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -137,7 +137,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/flw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/flw_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -178,7 +178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/brw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/brw_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -192,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/brw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/brw_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -233,7 +233,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/blw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/blw_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -247,7 +247,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/blw_Link.STL" />
+          filename="package://york_joy_control/model/meshes/blw_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -288,7 +288,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/print_Link.STL" />
+          filename="package://york_joy_control/model/meshes/print_Link.STL" />
       </geometry>
       <material
         name="blue">
@@ -302,7 +302,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/print_Link.STL" />
+          filename="package://york_joy_control/model/meshes/print_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -341,7 +341,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/up_Link.STL" />
+          filename="package://york_joy_control/model/meshes/up_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -355,7 +355,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/up_Link.STL" />
+          filename="package://york_joy_control/model/meshes/up_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -394,7 +394,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/p_Link.STL" />
+          filename="package://york_joy_control/model/meshes/p_Link.STL" />
       </geometry>
       <material
         name="gray">
@@ -408,7 +408,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/p_Link.STL" />
+          filename="package://york_joy_control/model/meshes/p_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -447,7 +447,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/fb_Link.STL" />
+          filename="package://york_joy_control/model/meshes/fb_Link.STL" />
       </geometry>
       <material
         name="metal">
@@ -461,7 +461,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://york/model/meshes/fb_Link.STL" />
+          filename="package://york_joy_control/model/meshes/fb_Link.STL" />
       </geometry>
     </collision>
   </link>

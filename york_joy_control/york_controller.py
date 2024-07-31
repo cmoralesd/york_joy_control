@@ -62,11 +62,9 @@ class MyRobotController(Node):
         odom_trans.transform.rotation = \
             euler_to_quaternion(0, 0, th) # roll,pitch,yaw
 
-        self.get_logger().info(f"x: {x}")
-        self.get_logger().info(f"y: {y}")
-        self.get_logger().info(f"th: {th}")
+        self.get_logger().info(f" YORK position: x: {x}, y: {y}, th: {th}")
 
-        # prepara el mensaje de posición de articulaciones, para publicación
+        # prepara el mensaje de posición de las articulaciones, para publicación
         joint_state = JointState()
         joint_state.header.stamp = time_now.to_msg()
         joint_state.name = ['flw_joint', 'frw_joint', 'blw_joint', 'brw_joint']

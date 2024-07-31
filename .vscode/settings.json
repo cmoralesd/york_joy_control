@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/user/york_ws/build/york_joy_control",
+        "/home/user/york_ws/install/york_joy_control/lib/python3.12/site-packages",
+        "/home/user/york_ws/build/york",
+        "/home/user/york_ws/install/york/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/user/york_ws/build/york_joy_control",
+        "/home/user/york_ws/install/york_joy_control/lib/python3.12/site-packages",
+        "/home/user/york_ws/build/york",
+        "/home/user/york_ws/install/york/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
