@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! 
+     Edited by @cmoralesd, july 2024
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot  name="york_urdf">
+
+  <!-- BASE LINK -->
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.062875 0.026468 -2.0449E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="dark gray">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- RUEDA FRONTAL DERECHA -->
+  <link
+    name="frw_Link">
+    <inertial>
+      <origin
+        xyz="-3.4304E-06 0.014787 3.4538E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.20029" />
+      <inertia
+        ixx="0.00013739"
+        ixy="1.2647E-09"
+        ixz="-8.5796E-10"
+        iyy="0.00022942"
+        iyz="-1.0267E-08"
+        izz="0.00013739" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/frw_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/frw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frw_joint"
+    type="continuous">
+    <origin
+      xyz="0.043965 -0.1368 0.020459"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="frw_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <!-- RUEDA FRONTAL IZQUIERDA -->
+    <link
+    name="flw_Link">
+    <inertial>
+      <origin
+        xyz="-4.6056E-06 -0.014105 7.2241E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.20022" />
+      <inertia
+        ixx="0.00013738"
+        ixy="-7.8382E-09"
+        ixz="-9.4422E-10"
+        iyy="0.00022942"
+        iyz="7.0508E-09"
+        izz="0.00013738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/flw_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/flw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="flw_joint"
+    type="continuous">
+    <origin
+      xyz="0.043965 0.1368 0.020459"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="flw_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  
+  <!-- RUEDA POSTERIOR DERECHA -->
+  <link
+    name="brw_Link">
+    <inertial>
+      <origin
+        xyz="-8.1859E-07 0.014105 4.6011E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.20022" />
+      <inertia
+        ixx="0.00013738"
+        ixy="7.29E-09"
+        ixz="-8.7599E-10"
+        iyy="0.00022942"
+        iyz="-7.5627E-09"
+        izz="0.00013738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/brw_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/brw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="brw_joint"
+    type="continuous">
+    <origin
+      xyz="-0.16604 -0.1368 0.020459"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="brw_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <!-- RUEDA POSTERIOR IZQUIERDA -->
+  <link
+    name="blw_Link">
+    <inertial>
+      <origin
+        xyz="1.8195E-06 -0.014787 4.2189E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.20029" />
+      <inertia
+        ixx="0.00013738"
+        ixy="-2.2209E-09"
+        ixz="-1.3258E-10"
+        iyy="0.00022942"
+        iyz="1.1069E-08"
+        izz="0.00013739" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/blw_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/blw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="blw_joint"
+    type="continuous">
+    <origin
+      xyz="-0.16604 0.1368 0.020459"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="blw_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <!-- ESTRUCTURA EXTERNA -->
+  <link
+    name="print_Link">
+    <inertial>
+      <origin
+        xyz="-0.049465 -7.1318E-05 0.10941"
+        rpy="0 0 0" />
+      <mass
+        value="0.045336" />
+      <inertia
+        ixx="0.00024085"
+        ixy="-3.5448E-12"
+        ixz="-4.3023E-06"
+        iyy="1.5885E-05"
+        iyz="-6.7384E-10"
+        izz="0.0002418" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/print_Link.STL" />
+      </geometry>
+      <material
+        name="blue">
+        <color
+          rgba="0 0.5 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/print_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="print_joint"
+    type="fixed">
+    <origin
+      xyz="-0.061035 0 -0.027941"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="print_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="up_Link">
+    <inertial>
+      <origin
+        xyz="0.0069289 1.4524E-05 0.13258"
+        rpy="0 0 0" />
+      <mass
+        value="0.52675" />
+      <inertia
+        ixx="0.0023409"
+        ixy="2.8879E-07"
+        ixz="-0.00018051"
+        iyy="0.0055444"
+        iyz="-7.0668E-08"
+        izz="0.0077521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/up_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/up_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="up_joint"
+    type="fixed">
+    <origin
+      xyz="-0.061035 0 -0.027941"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="up_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="p_Link">
+    <inertial>
+      <origin
+        xyz="-0.0022125 0.000284 0.064489"
+        rpy="0 0 0" />
+      <mass
+        value="0.38976" />
+      <inertia
+        ixx="0.0011179"
+        ixy="-1.1398E-06"
+        ixz="4.962E-05"
+        iyy="0.001671"
+        iyz="4.1379E-07"
+        izz="0.002341" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/p_Link.STL" />
+      </geometry>
+      <material
+        name="gray">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/p_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="p_joint"
+    type="fixed">
+    <origin
+      xyz="-0.061035 0 -0.027941"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="p_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fb_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/fb_Link.STL" />
+      </geometry>
+      <material
+        name="metal">
+        <color
+          rgba="0.8 0.8 0.78 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://york/model/meshes/fb_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fb_joint"
+    type="fixed">
+    <origin
+      xyz="-0.061035 0 -0.027941"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fb_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
